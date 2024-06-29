@@ -51,7 +51,7 @@ type VarName = String
 
 instance Show Shader where
     show (Shader fns decls stmts) =
-        "#version 430 core\n\n" ++
+        "#version 420 core\n\n" ++
         endWith "\n" (concatMap (\s -> show s ++ "\n") decls) ++
         concatMap (\s -> show s ++ "\n\n") fns ++
         "void main() {\n" ++
