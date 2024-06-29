@@ -4,3 +4,5 @@ packages:
 optional-packages:
     lib/HaGL-lib.cabal
     examples/HaGL-examples.cabal
+
+allow-newer: all

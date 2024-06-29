@@ -5,7 +5,7 @@ module Graphics.HaGL.CodeGen (
 ) where
 
 import Prelude hiding (id)
-import Control.Monad.State.Lazy (State, evalState, gets, modify, unless)
+import Control.Monad.State.Lazy (State, evalState, gets, modify)
 import Control.Exception (throw)
 import qualified Data.List as List
 import qualified Data.Map as Map
@@ -17,6 +17,7 @@ import Graphics.HaGL.GLExpr
 import Graphics.HaGL.GLAst
 import Graphics.HaGL.GLObj
 import Graphics.HaGL.Shader
+import Control.Monad (unless)
 
 
 -- GLProgram = output of code gen for a GLObj
